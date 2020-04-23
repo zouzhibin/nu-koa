@@ -1,0 +1,29 @@
+{
+  "name": "filhub",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js",
+    "pm2": "pm2 start index.js"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015-node5": "^1.2.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-view": "^2.1.3",
+    "nodemon": "^2.0.2",
+    "pm2": "^4.2.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "mysql": "^2.18.1"
+  }
+}

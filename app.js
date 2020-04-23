@@ -16,8 +16,8 @@ var connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
     port:     "3306",
-    password : 'root',
-    database : 'questions'
+    password : '123456',
+    // database : 'questions'
 });
 
 app.use(async (ctx, next) => {
@@ -103,13 +103,13 @@ connection.query(usernameSql,(err)=>{
     console.log('创建成功1')
 })
 
-// connection.query(createTableSql,(err)=>{
-//     if(err){
-//         console.log('已经存在')
-//         return
-//     }
-//     console.log('创建成功')
-// })
+connection.query(createTableSql,(err)=>{
+    if(err){
+        console.log('已经存在')
+        return
+    }
+    console.log('创建成功')
+})
 
 
 

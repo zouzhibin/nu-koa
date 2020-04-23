@@ -98,16 +98,15 @@ connection.connect(err=>{
     console.log('数据库连接成功')
 });
 connection.query(createTableSql,(err)=>{
-    if(err){
-        console.log('已经存在')
-        return
-    }
+    if(err) throw err
     console.log('创建成功')
 })
-connection.query(usernameSql,(err)=>{
-    if(err) throw err
-    console.log('创建成功1')
-})
+
+
+// connection.query(usernameSql,(err)=>{
+//     if(err) throw err
+//     console.log('创建成功1')
+// })
 
 
 

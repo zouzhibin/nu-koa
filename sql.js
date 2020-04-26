@@ -1,5 +1,5 @@
 // 建数据库
-export const createTableSql = `CREATE DATABASE  `
+export const createTableSql = `CREATE DATABASE questions`
 
 // 建用户表
 

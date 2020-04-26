@@ -16,7 +16,7 @@ var connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
     port:     "3306",
-    password : 'Abcd@12345',
+    password : 'root',
     // database : 'questions'
 });
 
@@ -103,10 +103,10 @@ connection.query(createTableSql,(err)=>{
 })
 
 
-// connection.query(usernameSql,(err)=>{
-//     if(err) throw err
-//     console.log('创建成功1')
-// })
+connection.query(usernameSql,(err)=>{
+    if(err) throw err
+    console.log('创建成功1')
+})
 
 
 
